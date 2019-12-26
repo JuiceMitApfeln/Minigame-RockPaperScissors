@@ -1,14 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bulma.min.css">
+<html lang="en" style="height: 100%;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/bulma.min.css" />
     <title>Rock Paper Scissors, SHOOT</title>
-</head>
-<body>
-    
-    <script src="./js.js""></script>
-</body>
+  </head>
+  <body style="min-height: 100%;">
+    <div
+      class="hero is-info is-centered"
+      style="display: flex; align-items: center; min-height: 100vh;"
+    >
+      <div
+        class="hero-body is-centered"
+        style="text-align: center; max-width: 800px;"
+      >
+        <div class="container">
+          <h1 class="title">What do you choose?</h1>
+          <h6 class="subtitle">
+            (rock - paper - scissors)
+          </h6>
+        </div>
+        <br />
+
+        <input class="input" id="inputUserChoice" /><br /><br />
+        <div class="container">
+          <button
+            type="submit"
+            class="btn button"
+            id="btnCompareChoices"
+            style="width:70%"
+          >
+            Compare
+          </button>
+        </div>
+        <div
+          class="hero is-info"
+          id="colorAnswer"
+          style="padding:10%; margin:50px"
+        >
+          <div class="container">
+            <h1 class="title" style="font-size: x-large;">
+              <span id="answer"></span>
+            </h1>
+            <h2 class="subtitle" id="choices" style="font-size: large;"></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js.js"></script>
+  </body>
 </html>
